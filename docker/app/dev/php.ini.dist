@@ -1,0 +1,21 @@
+date.timezone=America/Santiago
+memory_limit=256M
+
+; opcache
+opcache.enable=1
+opcache.revalidate_freq=0
+opcache.max_accelerated_files=10000
+opcache.memory_consumption=128
+opcache.interned_strings_buffer=8
+realpath_cache_size=4096K
+realpath_cache_ttl=600
+
+; xdebug
+zend_extension=xdebug.so
+xdebug.mode=debug
+xdebug.client_port=9003
+xdebug.client_host=host.docker.internal
+xdebug.remote_handler=dbgp
+xdebug.start_with_request=yes
+xdebug.max_nesting_level=250
+xdebug.idekey=VSCODE

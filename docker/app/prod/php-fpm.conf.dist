@@ -1,0 +1,5 @@
+[www]
+listen=9000
+pm=dynamic
+catch_workers_output=yes
+request_terminate_timeout=45s

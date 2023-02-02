@@ -1,0 +1,22 @@
+services:
+  app:
+    build: 
+      context: ./app/prod
+      args:
+        - user=${COMPOSE_USER}
+        - uid=${COMPOSE_UID}
+    container_name: "${COMPOSE_NAME}.app"
+    volumes:
+      - ./app/prod/php.ini:/usr/local/etc/php/php.ini
+      - ./app/prod/php-fpm.conf:/usr/local/etc/php-fpm.d/php-fpm.conf
+      - ../:/app
+  nginx:
+    image: nginx:1.22
+    container_name: "${COMPOSE_NAME}.nginx"
+    ports:
+      - ${NGINX_PORT}:80
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/app.conf:/etc/nginx/conf.d/default.conf
+      - ../public/:/app/public
+
