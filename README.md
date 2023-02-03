@@ -11,7 +11,7 @@ para configurar xdebug (solo en ambiente dev) hay que agregar
 
 - hay que agregar un carpeta si no esta creada .vscode dentro crear el archivo launch.json donde hay que agregar esta configuración
 
-{
+`{
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
@@ -27,4 +27,4 @@ para configurar xdebug (solo en ambiente dev) hay que agregar
             }
         }
     ]
-}
+}`
