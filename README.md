@@ -28,3 +28,7 @@ para configurar xdebug (solo en ambiente dev) hay que agregar
         }
     ]
 }`
+
+# importante 
+
+por ultimo eliminar .init.sh y carpeta .git una ves esta todo configurado y he iniciar un nuevo repo y pushear con force el primer commit.
