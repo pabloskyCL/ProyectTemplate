@@ -1,6 +1,8 @@
 # ProyectTemplate
 
-Intrucciones para levantar proyectos symfony
+## Intrucciones para levantar proyectos symfony solo versión 5.4 (por el momento, en un futuro se actualizara el script)
+
+- primero crear archivos de configuración a partir de los archivos .dist por lo que hay que copiar el archivo dentro de la misma ubicación pegarlo y quitarle el .dist 
 
 - correr el bash init.sh
     `./init.sh`
@@ -31,4 +33,5 @@ para configurar xdebug (solo en ambiente dev) hay que agregar
 
 # importante 
 
-por ultimo eliminar .init.sh y carpeta .git una ves esta todo configurado y he iniciar un nuevo repo y pushear con force el primer commit.
+- Por ultimo eliminar .init.sh y carpeta .git una ves esta todo configurado y he iniciar un nuevo repo y pushear con force el primer commit.
+- También por ultimo eliminar archivos .dist del proyecto.
